@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    image: react-app
+    container_name: owl-test
+    ports:
+      - '3000:80'
+    restart: unless-stopped

@@ -1,125 +1,172 @@
 body {
-    background-color: #f0fdf4;
-    color: #054f31;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+  background-color: #f0fdf4;
+  color: #054f31;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  background-color: #2e7d32 !important; 
+}
+
+.navbar .navbar-brand, .navbar .nav-link, .navbar .btn {
+  color: #ffffff !important;
+}
   
-  .navbar {
-    background-color: #2e7d32 !important;
-  }
+.navbar .btn-outline-light {
+  border-color: #ffffff;
+}
   
-  .navbar .navbar-brand, .navbar .nav-link, .navbar .btn {
-    color: #ffffff !important;
-  }
+a {
+  color: #2e7d32;
+  text-decoration: none;
+}
+ 
+a:hover {
+  color: #1b5e20;
+}
   
-  .navbar .btn-outline-light {
-    border-color: #ffffff;
-  }
+.btn-primary {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
   
-  a {
-    color: #2e7d32;
-    text-decoration: none;
-  }
+.btn-primary:hover {
+  background-color: #388e3c;
+  border-color: #388e3c;
+}
   
-  a:hover {
-    color: #1b5e20;
-  }
+.btn-secondary {
+  background-color: #81c784;
+  border-color: #81c784;
+}
   
-  .btn-primary {
-    background-color: #4caf50;
-    border-color: #4caf50;
-  }
+.btn-secondary:hover {
+  background-color: #66bb6a;
+  border-color: #66bb6a;
+}
   
-  .btn-primary:hover {
-    background-color: #388e3c;
-    border-color: #388e3c;
-  }
+.modal-content {
+  background-color: #e8f5e9;
+  border: 1px solid #c8e6c9;
+}
   
-  .btn-secondary {
-    background-color: #81c784;
-    border-color: #81c784;
-  }
+.modal-header, .modal-footer {
+  border-color: #c8e6c9;
+}
   
-  .btn-secondary:hover {
-    background-color: #66bb6a;
-    border-color: #66bb6a;
-  }
+.form-control {
+  border: 1px solid #a5d6a7;
+}
   
-  .modal-content {
-    background-color: #e8f5e9;
-    border: 1px solid #c8e6c9;
-  }
+.form-control:focus {
+  border-color: #66bb6a;
+  box-shadow: 0 0 0 0.2rem rgba(102, 187, 106, 0.25);
+}
   
-  .modal-header, .modal-footer {
-    border-color: #c8e6c9;
-  }
-   
-  h1, h2, h3, h4, h5 {
-    color: #2e7d32;
-  }
+h1, h2, h3, h4, h5 {
+  color: #2e7d32;
+}
   
-  .card {
-    background-color: #ffffff;
-    border: 1px solid #c8e6c9;
-    border-radius: 10px;
-  }
+.card {
+  background-color: #ffffff;
+  border: 1px solid #c8e6c9;
+  border-radius: 10px;
+}
   
-  .card-title {
-    color: #2e7d32;
-  }
+.card-title {
+  color: #2e7d32;
+}
   
-  .page-link {
-    color: #2e7d32;
-  }
+.page-link {
+  color: #2e7d32;
+}
   
-  .page-link:hover {
-    color: #1b5e20;
-  }
+.page-link:hover {
+  color: #1b5e20;
+}
   
-  .list-group-item {
-    background-color: #ffffff;
-    border: 1px solid #c8e6c9;
-  }
+.list-group-item {
+  background-color: #ffffff;
+  border: 1px solid #c8e6c9;
+}
   
+.modal.show .modal-dialog {
+  animation: slideDown 0.3s ease-out;
+}
+  
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @media (max-width: 768px) {
-    .navbar-nav {
-      text-align: center;
-    }
-    .navbar .nav-link, .navbar .btn {
-      margin-bottom: 0.5rem;
-    }
-  
-    .container {
-      padding: 0 15px;
-    }
+  /* Навбар: центрирование ссылок */
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar .nav-link, .navbar .btn {
+    margin-bottom: 0.5rem;
+  }
 
-    .btn {
-      font-size: 14px;
-      padding: 0.5rem 1rem;
-    }
-  
-    h1, h2, h3, h4, h5 {
-      font-size: 1.5rem;
-    }
-  
-    .card {
-      margin-bottom: 1rem;
-    }
+  /* Контейнеры */
+  .container {
+    padding: 0 15px;
+  }
+
+  /* Модальные окна */
+  .modal-dialog {
+    margin: 1.75rem auto;
+    max-width: 90%;
   }
   
-  @media (max-width: 480px) {
-    .navbar-brand {
-      font-size: 1.25rem;
-    }
-  
-    .btn {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-
-    .pagination {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+  /* Формы */
+  .form-control {
+    font-size: 14px;
   }
+ 
+  /* Кнопки */
+  .btn {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Текст */
+  h1, h2, h3, h4, h5 {
+    font-size: 1.5rem;
+  }
+  
+  /* Карточки */
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+  
+/* Адаптивность: очень маленькие устройства (например, iPhone SE) */
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Модальные окна */
+  .modal-content {
+    padding: 10px;
+  }
+  
+  /* Пагинация */
+  .pagination {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
   

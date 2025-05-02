@@ -1,12 +1,67 @@
-# React + Vite
+# Owl Test
+<br>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [🚀 О проекте](#Описание)
+- [⚙️ Функционал](#Функционал)
+- [🛠 Стек](#Стек)
+- [🚀 Установка](#Установка)
+<br>
 
-Currently, two official plugins are available:
+## Описание
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Проект демонстрирует взаимодействие с публичным API для фронтенд-разработки. Включает:
 
-## Expanding the ESLint configuration
+  📄 Список статей с пагинацией и фильтрацией
+  🔍 Детальные страницы товаров
+  📝 Форму обратной связи с валидацией
+  🔐 Систему авторизации
+  🐳 Docker-контейнеризацию
+<br>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Функционал
+
+  1. Работа с API
+    - Получение статей
+    - Загрузка данных пользователей
+
+  2. Форма обратной связи
+    - Валидация полей (ФИО, телефон, email, дата)
+    - Календарь для выбора даты (DatePicker)
+    - Скрытые поля для авторизованных пользователей
+    - Модальное окно с результатами отправки
+
+  3. Система авторизации
+    - Модальное окно входа
+    - Персональная страница пользователя
+    - Кнопка выхода из системы
+
+  4. Страницы контента
+    - Пагинация и фильтрация статей (клиентская сторона)
+    - Адаптивный дизайн
+<br>
+
+## Стек
+
+ - React + Redux
+ - Bootstrap 5 + Font Awesome
+ - Docker
+ - Axios
+<br>
+
+## Установка
+
+Клонировать репозиторий:
+
+```
+git clone git@github.com:Dmitriy-SP/Owl-test.git
+```
+
+Запустить через Docker:
+
+```
+docker compose up -d --build
+```
+
+Открыть в браузере:
+
+http://localhost:3000
